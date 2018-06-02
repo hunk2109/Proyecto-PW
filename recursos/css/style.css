@@ -77,12 +77,13 @@ h2{
 
 
 h2:after{
-    display: block;;
-    background-color: #27ae60
-    content:"";
+    display: block;
+    height: 2px;
+    background-color: #27ae60;
+    content:" ";
     width: 100px;
     margin: 0 auto;
-    margin-top: 30px
+    margin-top: 30px;
 }
 
 h3{
