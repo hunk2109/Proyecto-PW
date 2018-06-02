@@ -28,6 +28,13 @@ html{
     margin: 0 auto;
 }
 
+.ib{
+    font-size: 350%;
+    display: block;
+    color: #27ae60;
+    margin-bottom: 10px;
+}
+
 h1{
      margin-top: 0;
      margin-bottom: 20px;
@@ -169,3 +176,9 @@ header{
 .main-nav li a:hover,.main-nav li a:active{
     border-bottom: 2px solid #27ae60; 
 } 
+
+
+.sect {
+    padding: 80px 0;
+    
+    }
