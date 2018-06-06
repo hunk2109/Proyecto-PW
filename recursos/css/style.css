@@ -551,3 +551,16 @@ footer p{
 }
 
 
+/*animaciones*/
+.js-row-se,.js-foto{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js-sect-p{
+    animation-duration: 1s;
+}
+
+.js-row-se .animated,.js-foto .animated,.js-plans .animated{
+    opacity: 1;
+}
