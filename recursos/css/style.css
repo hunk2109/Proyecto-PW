@@ -5,7 +5,7 @@
 *{
     margin: 0;
     padding: 0;
-    -webkit-box-sizing:;
+    -webkit-box-sizing: border-box;    
     box-sizing: border-box;
 
     
@@ -88,7 +88,7 @@ h2:after{
 }
 
 h3{
-    font-size: 110;
+    font-size: 110%;
     margin-bottom: 15px;
 }
 
@@ -108,6 +108,7 @@ h3{
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
+    -webkit-transition:  background-color 0.2s, border 0.2s,color 0.2s;
     transition:  background-color 0.2s, border 0.2s,color 0.2s;
     
 }
@@ -153,7 +154,7 @@ h3{
 
 header{
    
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.85)),to(rgba(0, 0, 0, 0.85))), url(recursos/img/head.jpg);
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.6)),to(rgba(0, 0, 0, 0.6))), url(img/head.jpg);
    
     background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)), url(img/head.jpg);
     height: 100vh;
@@ -171,7 +172,7 @@ header{
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50,-50);
-    transform: translate(-50%,-50%);*/
+    transform: translate(-50%,-50%);
 }
 
 .logo{
@@ -201,6 +202,7 @@ header{
     text-transform: uppercase;
     font-size: 90%; 
      border-bottom: 2px solid transparent; 
+    -webkit-transition: border-bottom 0.2s; 
     transition: border-bottom 0.2s;
 }
 
@@ -209,12 +211,13 @@ header{
     border-bottom: 2px solid #27ae60; 
 } 
 
-.
+
 
 .sect {
     padding: 80px 0;
     
-    }
+    
+}
 
 .sect .lc{
     margin-bottom: 30px;
@@ -226,7 +229,8 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(255,2555,255,0.99);
+    background-color:rgba(255, 255, 255, 0.9);
+    -webkit-box-shadow: 0 2px 2px #b5b4b4;
     box-shadow: 0 2px 2px #b5b4b4;
     z-index: 9999;
 
@@ -356,6 +360,7 @@ width: 100%;
 
 /*Testimonios*/
 .revi-clientes{
+    background-image:-webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.8)),to(rgba(0,0,0,0.8))),url(img/quots.jpg);
     background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(img/quots.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -395,6 +400,7 @@ blockquote:before{
     background-color: #fff;
     border-radius: 5px;
     width: 90%;
+    -webkit-box-shadow: 0 2px 2px #f5f5f5;
     box-shadow: 0 2px 2px #f5f5f5;
 }
 
@@ -403,7 +409,7 @@ blockquote:before{
     border-bottom: 1px solid #e3dfdf;
 }
 
-.plans-box div:firts-child{
+.plans-box div:first-child{
     background-color: #f5f4f4;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -504,6 +510,7 @@ input[type=text],input[type=email],select,textarea{
         text-decoration: none;
         border:none;
         color: #888;
+        -webkit-transition: color 0.2s;
         transition: color 0.2s;
     }
 
@@ -554,10 +561,12 @@ footer p{
 /*animaciones*/
 .js-row-se,.js-foto{
     opacity: 0;
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
 .js-sect-p{
+    -webkit-animation-duration: 1s;
     animation-duration: 1s;
 }
 
